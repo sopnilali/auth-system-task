@@ -11,8 +11,8 @@ const Register = () => {
     }
 
     return (
-        <div className=" bg-gray-200 min-h-screen flex items-center">
-            <div className="max-w-xl bg-white mx-auto p-5 rounded-md shadow-lg hover:shadow-xl w-96">
+        <div className=" bg-gray-300 min-h-screen flex items-center max-w-full">
+            <div className=" bg-white mx-auto py-6 rounded-md shadow-lg hover:shadow-xl px-10 ">
                 <h2 className="text-center text-5xl py-5 font-bold text-green-700">Registration</h2>
 
                 <select
@@ -29,7 +29,7 @@ const Register = () => {
 
                 {selection === 'hospital' && (
                     <div>
-                        <form className=" flex flex-col ">
+                        <form className=" max-w-full flex flex-col ">
                             <div className="flex flex-col overflow-y-scroll h-96 my-2">
                                 <input type="text" name="di" id="" placeholder="Diagnostic Name" className="p-3 rounded-md border mb-2" />
                                 <select name="" id="" className="w-full p-3 rounded-md mb-2 border">
@@ -102,7 +102,7 @@ const Register = () => {
 
                             </div>
                             <div className="flex justify-center items-center gap-3   ">
-                                <Link to="/login" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
+                                <Link to="/" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
                                 <button type="submit" className="bg-green-500 w-full text-white p-3 rounded-md mt-2">Register</button>
                             </div>
                         </form>
@@ -118,7 +118,7 @@ const Register = () => {
                                 <input type="password" name="service" id="" placeholder="Password" className="p-3 rounded-md border mb-2" />
                             </div>
                             <div className="flex justify-center items-center gap-3   ">
-                                <Link to="/login" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
+                                <Link to="/" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
                                 <button type="submit" className="bg-green-500 w-full text-white p-3 rounded-md mt-2">Register</button>
                             </div>
                         </form>
@@ -133,7 +133,7 @@ const Register = () => {
                                 <input type="password" name="service" id="" placeholder="Password" className="p-3 rounded-md border mb-2" />
                             </div>
                             <div className="flex justify-center items-center gap-3   ">
-                                <Link to="/login" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
+                                <Link to="/" className="bg-gray-500 w-full text-white p-3 rounded-md mt-2 text-center">Login</Link>
                                 <button type="submit" className="bg-green-500 w-full text-white p-3 rounded-md mt-2">Register</button>
                             </div>
                         </form>
